@@ -2,7 +2,14 @@ import random
 
 rounds = 1
 
+print("BIENVENIDO A PIEDRA, PAPEL O TIJERA")
+print("En este juego iras en contra de la maquina, ganara el primero en lograr 2 victorias")
+print("")
+print("Buena suerte y a Jugar")
+print("")
+
 def choose_options():
+  print("A continuación selecciona la opción con la cual deseas jugar")
   options = ('piedra', 'papel', 'tijera')
   user_option = input('piedra, papel o tijera => ')
   user_option = user_option.lower()
@@ -70,13 +77,19 @@ def run_game():
         
     if computer_wins == 2:
       print('*' * 10)
-      print('El ganador es la computadora')
+      print("RESULTADO FINAL")
+      print('computer_wins', computer_wins)
+      print('user_wins', user_wins)
+      print('Haz Perdido')
       print('*' * 10)
       break
   
     elif user_wins == 2:
       print('*' * 10)
-      print('El ganador es el usuario')
+      print("RESULTADO FINAL")
+      print('computer_wins', computer_wins)
+      print('user_wins', user_wins)
+      print('Haz Ganado')
       print('*' * 10)
       break
 
